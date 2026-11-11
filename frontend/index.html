@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Task Management System</h1>
+        <p class="subtitle">Organize your daily tasks easily</p>
+        <div class="input-section">
+            <input type="text" id="taskInput"
+                   placeholder="Enter your task...">
+            <button id="addButton">Add Task</button>
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="totalCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completedCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pendingCount">0</p>
+            </div>
+    </div>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        <div id="taskList"></div>
+        <p id="emptyMessage">No tasks available. Add your first task!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
